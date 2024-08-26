@@ -1,0 +1,122 @@
+
+.shop-cart-block{
+    float: left;
+    width: 20%;
+    padding: 50px 5%;
+    background: #fafafa;
+    box-shadow: -3px 0px 5px rgba(0,0,0.1);
+    
+   
+   
+}
+.shop-cart-block:not(.active){display:none}
+
+.shop-cart-block h4{
+   font-weight: 600;
+   font-size: 25px;
+}
+.shop-cart-block .titles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-weight: 600;
+}
+.shop-cart-block.titles span{
+    display: block;
+}
+.shop-cart-block button.go-shop{
+    width: 100%;
+    margin-top: 50px;
+    border: 0;
+    height: 70px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 70px;
+    background: #fdbd01;
+    cursor: pointer;
+    transform: background 500ms ease;
+
+}
+.shop-cart-block button.go-shop:hover{
+    background: #ff8605;
+}
+.go-shop-btn{
+    width: 100%;
+    margin-top: 50px;
+    border: 0;
+    height: 70px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 70px;
+    background: #fdbd01;
+    cursor: pointer;
+    transform: background 500ms ease;  
+}
+.go-shop-btn:hover{
+    background: #ff8605;
+}
+/* .shop-cart-block:not(.active){display: none;} */
+
+.shop-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+    color: #545454;
+
+}
+.shop-item .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+.shop-item {
+    margin-bottom: 5px;
+}
+
+.shop-item .count {
+    font-weight: 600;
+}
+.shop-item .count button {
+    border: 0;
+    background: #f3bd00;
+    margin-left: 7px;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #6a516a;
+    transition: background 500ms ease;
+}
+
+.shop-item .count button:hover {
+    background: #c19808;
+}
+
+.shop-item .count input {
+    margin: 0 5px;
+    border: 0.5px solid #c19808;
+    border-radius: 10%;
+    width: 40px;
+    height: 25px;
+    padding-left: 7px;
+    
+}
+
+.shop-item .count.delete {
+    margin: 5px;
+    border-radius: 50%;
+    background: #f3bd00;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
