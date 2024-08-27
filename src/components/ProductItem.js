@@ -1,6 +1,6 @@
 
 export default function ProductItem({id,image,name,price,desc,addToCart}){
-  
+  console.log(image)
     return(
         <div className="item">
         <img src={image} alt="{name}"/>

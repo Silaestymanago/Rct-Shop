@@ -12,10 +12,14 @@ export default function ShopCartBlock({isActive,cartItems}){
         <span>Number</span>
         </div>
         <div className="shop-cart">
+        {console.log(cartItems)}
         {cartItems.map((item,index)=>(
             <div key ={index} className='shop-item'>
             <div className='info'>
-           <img src={item.img} alt={item.name} />
+           <img src={`/img/product/${item.img}`}
+           alt={item.name} 
+
+           />
             <span>{item.name}</span>
             </div>
            <span>{item.price}$</span>

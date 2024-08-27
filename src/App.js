@@ -19,6 +19,7 @@ const App = () => {
                 const updatedCartItems = Items.map(item => {
                 const existingCartItem = prevItems.find(cartItem => cartItem.id ===item.id);
                 if (existingCartItem) {
+                  console.log("existingCartItem", existingCartItem)
                     return { ...existingCartItem, count: existingCartItem.count + (item.id === id ? 1 : 0) };
                 }  
                 return item.id === id ? { ...item, count: 1 } : item;

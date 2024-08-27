@@ -11,7 +11,7 @@ export default function MainPage({ isCartActive, toggleCart, addToCart }) {
                 <ProductItem 
                     key={item.id}
                     id={item.id}
-                    image={require(`../img/${item.img}`)}
+                    image={`/img/product/${item.img}`}
                     name={item.name}
                     price={item.price}
                     desc={item.desc}
